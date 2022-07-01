@@ -3,8 +3,17 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
-- file: mymarkdownfile
+parts:
+- caption: Nobrainer
+  chapters:
+  - file: markdown
+    sections:
+    - file: notebooks
+    - file: markdown-notebooks
+    sections:
+    - file: mymarkdownfile
+    - file: new_file.md
+- caption: Nobeainer-zoo
+  chapters:
+  - file: new_file.md
+
